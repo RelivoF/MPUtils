@@ -107,6 +107,10 @@ repositories {
         name 'CleanroomMC Maven'
         url 'https://maven.cleanroommc.com'
     }
+    maven {
+        name 'BlameJared Maven'
+        url 'https://maven.blamejared.com'
+    }
 }
 
 dependencies {
@@ -144,6 +148,8 @@ dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     }
+
+    implementation "com.cleanroommc:modularui:2.5.0-rc2"
 }
 
 apply from: 'gradle/scripts/dependencies.gradle'
